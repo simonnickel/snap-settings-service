@@ -5,19 +5,35 @@ import PackageDescription
 
 let package = Package(
     name: "snap-settings-service",
+	platforms: [
+		.iOS(.v17), .macOS(.v14) //, .tvOS(.v17)
+	],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "SnapSettingsService",
-            targets: ["SnapSettingsService"]),
+            targets: ["SnapSettingsService"]
+		),
     ],
+	dependencies: [
+		// Dependencies declare other packages that this package depends on.
+		.package(url: "https://github.com/simonnickel/snap-core.git", branch: "main"),
+	],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SnapSettingsService"),
+            name: "SnapSettingsService",
+			dependencies: [
+				.product(name: "SnapCore", package: "snap-core"),
+			],
+			swiftSettings: [
+				.enableExperimentalFeature("StrictConcurrency")
+			]
+		),
         .testTarget(
             name: "SnapSettingsServiceTests",
-            dependencies: ["SnapSettingsService"]),
+            dependencies: ["SnapSettingsService"]
+		),
     ]
 )
