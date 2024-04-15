@@ -2,6 +2,7 @@
 
 This package provides the `SettingsService` class, `SettingsStore` protocol and helper to save settings. They can be stored locally (UserDefaults), synced (NSUbiquitousKeyValueStore) or in a custom store. 
 
+This package is part of the [SNAP](https://github.com/simonnickel/snap-abstract) suite.
 
 
 ## How to use
