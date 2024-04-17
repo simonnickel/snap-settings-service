@@ -61,7 +61,8 @@ If user is not logged in, the value is stored locally and a warning is logged.
 
 > To use NSUbiquitousKeyValueStore, you must distribute your app through the App Store or Mac App Store, and you must request the com.apple.developer.ubiquity-kvstore-identifier entitlement in your Xcode project.
 [NSUbiquitousKeyValueStore Documentation](https://developer.apple.com/documentation/foundation/nsubiquitouskeyvaluestore#)
-(See [Setup](#Setup))
+
+(see [Setup](#Setup))
 
 
 ### .custom(id:)
