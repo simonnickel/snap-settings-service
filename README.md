@@ -5,6 +5,11 @@ This package provides the `SettingsService` class, `SettingsStore` protocol and 
 > This package is part of the [SNAP](https://github.com/simonnickel/snap-abstract) suite.
 
 
+## Setup
+
+To support settings stored in iCloud (`NSUbiquitousKeyValueStore`) you have to add the `iCloud` Capability to the target and enable the `Key-value storage` checkbox.
+
+
 ## How to use
 
 Define your settings:
@@ -56,6 +61,7 @@ If user is not logged in, the value is stored locally and a warning is logged.
 
 > To use NSUbiquitousKeyValueStore, you must distribute your app through the App Store or Mac App Store, and you must request the com.apple.developer.ubiquity-kvstore-identifier entitlement in your Xcode project.
 [NSUbiquitousKeyValueStore Documentation](https://developer.apple.com/documentation/foundation/nsubiquitouskeyvaluestore#)
+(See [Setup](#Setup))
 
 
 ### .custom(id:)
