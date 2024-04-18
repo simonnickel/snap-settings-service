@@ -16,7 +16,7 @@ To support settings stored in iCloud (`NSUbiquitousKeyValueStore`) you have to a
 
 The [demo project](/SnapSettingsServiceDemo) shows an example usage of the SettingsService with settings in different scopes.
 
-![Screenshot of Demo app](/screenshot.png)
+<img src="/screenshot.png" height="400">
 
 
 ## How to use
