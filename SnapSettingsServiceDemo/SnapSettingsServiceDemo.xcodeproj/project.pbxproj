@@ -19,13 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A36E8D12BD1973D00539BC4 /* snap-settings-service */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "snap-settings-service"; path = ..; sourceTree = "<group>"; };
 		5A96A92A2BD191A000DFAC0F /* SnapSettingsServiceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapSettingsServiceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A96A92D2BD191A000DFAC0F /* SnapSettingsServiceDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapSettingsServiceDemoApp.swift; sourceTree = "<group>"; };
 		5A96A92F2BD191A000DFAC0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5A96A9312BD191A200DFAC0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A96A9332BD191A200DFAC0F /* SnapSettingsServiceDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapSettingsServiceDemo.entitlements; sourceTree = "<group>"; };
 		5A96A9352BD191A200DFAC0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5A96A9432BD1946700DFAC0F /* snap-settings-service */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "snap-settings-service"; path = ..; sourceTree = "<group>"; };
 		5A96A9442BD194F900DFAC0F /* SettingsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsList.swift; sourceTree = "<group>"; };
 		5A96A9462BD1953A00DFAC0F /* CustomStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStore.swift; sourceTree = "<group>"; };
 		5A96A9472BD1953A00DFAC0F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		5A96A9212BD191A000DFAC0F = {
 			isa = PBXGroup;
 			children = (
-				5A96A9432BD1946700DFAC0F /* snap-settings-service */,
+				5A36E8D12BD1973D00539BC4 /* snap-settings-service */,
 				5A96A92C2BD191A000DFAC0F /* SnapSettingsServiceDemo */,
 				5A96A92B2BD191A000DFAC0F /* Products */,
 			);
