@@ -12,6 +12,10 @@
 		5A96A9322BD191A200DFAC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A96A9312BD191A200DFAC0F /* Assets.xcassets */; };
 		5A96A9362BD191A200DFAC0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A96A9352BD191A200DFAC0F /* Preview Assets.xcassets */; };
 		5A96A9422BD1945E00DFAC0F /* SnapSettingsService in Frameworks */ = {isa = PBXBuildFile; productRef = 5A96A9412BD1945E00DFAC0F /* SnapSettingsService */; };
+		5A96A9452BD194F900DFAC0F /* SettingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9442BD194F900DFAC0F /* SettingsList.swift */; };
+		5A96A94A2BD1953A00DFAC0F /* CustomStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9462BD1953A00DFAC0F /* CustomStore.swift */; };
+		5A96A94B2BD1953A00DFAC0F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9472BD1953A00DFAC0F /* Settings.swift */; };
+		5A96A94C2BD1953A00DFAC0F /* SettingsService+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9482BD1953A00DFAC0F /* SettingsService+Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		5A96A9332BD191A200DFAC0F /* SnapSettingsServiceDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapSettingsServiceDemo.entitlements; sourceTree = "<group>"; };
 		5A96A9352BD191A200DFAC0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A96A9432BD1946700DFAC0F /* snap-settings-service */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "snap-settings-service"; path = ..; sourceTree = "<group>"; };
+		5A96A9442BD194F900DFAC0F /* SettingsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsList.swift; sourceTree = "<group>"; };
+		5A96A9462BD1953A00DFAC0F /* CustomStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStore.swift; sourceTree = "<group>"; };
+		5A96A9472BD1953A00DFAC0F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		5A96A9482BD1953A00DFAC0F /* SettingsService+Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingsService+Environment.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 			children = (
 				5A96A92D2BD191A000DFAC0F /* SnapSettingsServiceDemoApp.swift */,
 				5A96A92F2BD191A000DFAC0F /* ContentView.swift */,
+				5A96A9442BD194F900DFAC0F /* SettingsList.swift */,
+				5A96A9492BD1953A00DFAC0F /* SettingsService */,
 				5A96A9312BD191A200DFAC0F /* Assets.xcassets */,
 				5A96A9332BD191A200DFAC0F /* SnapSettingsServiceDemo.entitlements */,
 				5A96A9342BD191A200DFAC0F /* Preview Content */,
@@ -71,6 +81,16 @@
 				5A96A9352BD191A200DFAC0F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A96A9492BD1953A00DFAC0F /* SettingsService */ = {
+			isa = PBXGroup;
+			children = (
+				5A96A9462BD1953A00DFAC0F /* CustomStore.swift */,
+				5A96A9472BD1953A00DFAC0F /* Settings.swift */,
+				5A96A9482BD1953A00DFAC0F /* SettingsService+Environment.swift */,
+			);
+			path = SettingsService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A96A94A2BD1953A00DFAC0F /* CustomStore.swift in Sources */,
 				5A96A9302BD191A000DFAC0F /* ContentView.swift in Sources */,
+				5A96A94C2BD1953A00DFAC0F /* SettingsService+Environment.swift in Sources */,
 				5A96A92E2BD191A000DFAC0F /* SnapSettingsServiceDemoApp.swift in Sources */,
+				5A96A9452BD194F900DFAC0F /* SettingsList.swift in Sources */,
+				5A96A94B2BD1953A00DFAC0F /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

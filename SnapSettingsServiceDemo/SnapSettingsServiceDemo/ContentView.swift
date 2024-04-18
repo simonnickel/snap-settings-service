@@ -10,15 +10,25 @@ import SnapCore
 import SnapSettingsService
 
 struct ContentView: View {
+	
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+		NavigationStack {
+			List {
+				
+				Section {
+					NavigationLink {
+						SettingsList()
+					} label: {
+						Text("Settings")
+					}
+				} footer: {
+					Text("On remote change, log should show 0 publisher while on this screen.")
+				}
+				
+			}
+		}
     }
+	
 }
 
 #Preview {
