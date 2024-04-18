@@ -7,12 +7,11 @@
 
 import Foundation
 import OSLog
+import SnapCore
 
 internal extension Logger {
 	
-	private static var subsystem: String { Bundle.main.bundleIdentifier! }
-	
-	static let settings = Logger(subsystem: subsystem, category: "SettingsService")
+	static let settings = Logger(category: "SettingsService")
 	
 }
 
