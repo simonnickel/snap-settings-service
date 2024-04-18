@@ -1,6 +1,8 @@
 # SnapSettingsService
 
-This package provides the `SettingsService` class, `SettingsStore` protocol and helper to save settings. They can be stored locally (UserDefaults), synced (NSUbiquitousKeyValueStore) or in a custom store. 
+A single interface to handle different types of settings. It stores a `Codable` type for a `String` key, either locally (UserDefaults), synced (NSUbiquitousKeyValueStore) or in a custom store.
+
+This package provides the `SettingsService` class, `SettingsStore` protocol and helper to define, save and read settings.
 
 > This package is part of the [SNAP](https://github.com/simonnickel/snap-abstract) suite.
 
