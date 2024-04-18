@@ -12,6 +12,13 @@ This package provides the `SettingsService` class, `SettingsStore` protocol and 
 To support settings stored in iCloud (`NSUbiquitousKeyValueStore`) you have to add the `iCloud` Capability to the target and enable the `Key-value storage` checkbox.
 
 
+## Demo
+
+The demo project shows an example on how to use settings in different scopes.
+
+![Screenshot of Demo app](/screenshot.png)
+
+
 ## How to use
 
 Define your settings:
