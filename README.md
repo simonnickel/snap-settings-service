@@ -14,7 +14,7 @@ To support settings stored in iCloud (`NSUbiquitousKeyValueStore`) you have to a
 
 ## Demo
 
-The demo project shows an example on how to use settings in different scopes.
+The [demo project](/SnapSettingsServiceDemo) shows an example usage of the SettingsService with settings in different scopes.
 
 ![Screenshot of Demo app](/screenshot.png)
 
