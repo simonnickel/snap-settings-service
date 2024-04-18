@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import SnapCore
+import SnapSettingsService
 
 struct ContentView: View {
     var body: some View {
