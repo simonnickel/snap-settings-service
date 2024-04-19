@@ -50,7 +50,7 @@ struct MyView: View {
 
 The `SettingsService` can be configured with a `SettingsStore` object for a `Scope`: .defaults, .ubiquitous, .custom(id:)
 ```
-	SettingsService.init(defaults: UserDefaults? = .standard, ubiquitous: NSUbiquitousKeyValueStore? = .default, storesForCustomScopes: [Scope : SettingsStore] = [:])
+SettingsService.init(defaults: UserDefaults? = .standard, ubiquitous: NSUbiquitousKeyValueStore? = .default, storesForCustomScopes: [Scope : SettingsStore] = [:])
 ```
 
 
