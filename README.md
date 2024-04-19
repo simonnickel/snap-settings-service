@@ -27,14 +27,14 @@ extension SettingsService.SettingDefinition {
 }
 ```
 
-Simply use your settings:
+Read and write the settings:
 ```
 let settings = SettingsService()
 settings.set(.exampleNumber, to: 2)
 let number = settings.get(.exampleNumber)
 ```
 
-When you need it to update on changes:
+Use the binding, when you need it to update on changes:
 ```
 struct MyView: View {
 	let observableValue: SettingsService.Value<Int> = settings.value(.exampleNumber)
@@ -95,7 +95,7 @@ public protocol SettingsStore {
 	func get<T>(_ key: SettingsService.Setting<T>) -> Data?
 	func set<T>(_ key: SettingsService.Setting<T>, to data: Data?)
 }
-``` 
+```
 
 
 ## Access Setting
@@ -109,7 +109,6 @@ settings.set(.exampleNumber, to: 2)
 let number = settings.get(.exampleNumber)
 ```
 
-
 ### Observable Value
 
 ```
@@ -121,7 +120,6 @@ struct MyView: View {
 	}
 }
 ```
-
 
 ### Publisher
 
@@ -144,12 +142,7 @@ View().environment(\.serviceSettings, settings)
 ```
 
 
-
 ## TODO
-
-// TODO: ... 
- - Add Documentation
- - Add Tests
 
 // TODO: App Groups? Access in Widget?
 // TODO: Handle iCloud not available. It does store locally and logs a warning, but should do something?
