@@ -10,7 +10,6 @@ import Combine
 import OSLog
 import SnapCore
 
-@MainActor
 public class SettingsService {
 	
 	/// Creates a `SettingsService` with option to specify stores.

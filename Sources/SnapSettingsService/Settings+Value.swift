@@ -15,7 +15,6 @@ public extension SettingsService {
 		Value(settings: self, setting: setting)
 	}
 	
-	@MainActor
 	@Observable class Value<T: SettingDefinition.TypeRequirement> {
 		
 		private let settings: SettingsService
