@@ -15,7 +15,6 @@
 		5A96A9452BD194F900DFAC0F /* SettingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9442BD194F900DFAC0F /* SettingsList.swift */; };
 		5A96A94A2BD1953A00DFAC0F /* CustomStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9462BD1953A00DFAC0F /* CustomStore.swift */; };
 		5A96A94B2BD1953A00DFAC0F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9472BD1953A00DFAC0F /* Settings.swift */; };
-		5A96A94C2BD1953A00DFAC0F /* SettingsService+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9482BD1953A00DFAC0F /* SettingsService+Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		5A96A9442BD194F900DFAC0F /* SettingsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsList.swift; sourceTree = "<group>"; };
 		5A96A9462BD1953A00DFAC0F /* CustomStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStore.swift; sourceTree = "<group>"; };
 		5A96A9472BD1953A00DFAC0F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		5A96A9482BD1953A00DFAC0F /* SettingsService+Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingsService+Environment.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +86,6 @@
 			children = (
 				5A96A9462BD1953A00DFAC0F /* CustomStore.swift */,
 				5A96A9472BD1953A00DFAC0F /* Settings.swift */,
-				5A96A9482BD1953A00DFAC0F /* SettingsService+Environment.swift */,
 			);
 			path = SettingsService;
 			sourceTree = "<group>";
@@ -171,7 +168,6 @@
 			files = (
 				5A96A94A2BD1953A00DFAC0F /* CustomStore.swift in Sources */,
 				5A96A9302BD191A000DFAC0F /* ContentView.swift in Sources */,
-				5A96A94C2BD1953A00DFAC0F /* SettingsService+Environment.swift in Sources */,
 				5A96A92E2BD191A000DFAC0F /* SnapSettingsServiceDemoApp.swift in Sources */,
 				5A96A9452BD194F900DFAC0F /* SettingsList.swift in Sources */,
 				5A96A94B2BD1953A00DFAC0F /* Settings.swift in Sources */,
