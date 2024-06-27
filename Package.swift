@@ -29,7 +29,7 @@ let package = Package(
 			],
 			swiftSettings: [
 				.enableExperimentalFeature("StrictConcurrency")
-			]
+			] // TODO: Remove
 		),
         .testTarget(
             name: "SnapSettingsServiceTests",
