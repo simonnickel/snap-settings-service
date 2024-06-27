@@ -5,6 +5,10 @@
 > This package is part of the [SNAP](https://github.com/simonnickel/snap-abstract) suite.
 
 
+
+// TODO: xc16 warnings - Capture of 'self' with non-sendable type 'SettingsService' in a `@Sendable` closure; this is an error in the Swift 6 language mode
+
+
 # SnapSettingsService
 
 A single interface to handle different types of settings. It stores a `Codable` type for a `String` key, either locally (UserDefaults), synced (NSUbiquitousKeyValueStore) or in a custom store.
