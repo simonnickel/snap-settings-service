@@ -8,13 +8,13 @@ let package = Package(
 	platforms: [
 		.iOS(.v18), .macOS(.v15)
 	],
-    products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "SnapSettingsService",
-            targets: ["SnapSettingsService"]
+	products: [
+		// Products define the executables and libraries a package produces, making them visible to other packages.
+		.library(
+			name: "SnapSettingsService",
+			targets: ["SnapSettingsService"]
 		),
-    ],
+	],
 	dependencies: [
 		// Dependencies declare other packages that this package depends on.
 		.package(url: "https://github.com/simonnickel/snap-core.git", branch: "main-xc16"), // TODO: Switch back to main
@@ -36,4 +36,5 @@ let package = Package(
             dependencies: ["SnapSettingsService"]
 		),
     ]
+	// TODO: swiftLanguageVersions: [.version("6")]
 )
