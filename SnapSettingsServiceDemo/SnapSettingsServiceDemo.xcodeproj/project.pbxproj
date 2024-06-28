@@ -11,14 +11,13 @@
 		5A96A9302BD191A000DFAC0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A92F2BD191A000DFAC0F /* ContentView.swift */; };
 		5A96A9322BD191A200DFAC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A96A9312BD191A200DFAC0F /* Assets.xcassets */; };
 		5A96A9362BD191A200DFAC0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A96A9352BD191A200DFAC0F /* Preview Assets.xcassets */; };
-		5A96A9422BD1945E00DFAC0F /* SnapSettingsService in Frameworks */ = {isa = PBXBuildFile; productRef = 5A96A9412BD1945E00DFAC0F /* SnapSettingsService */; };
 		5A96A9452BD194F900DFAC0F /* SettingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9442BD194F900DFAC0F /* SettingsList.swift */; };
 		5A96A94A2BD1953A00DFAC0F /* CustomStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9462BD1953A00DFAC0F /* CustomStore.swift */; };
 		5A96A94B2BD1953A00DFAC0F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9472BD1953A00DFAC0F /* Settings.swift */; };
+		5AF4C9A82C2EA7E90021B93F /* SnapSettingsService in Frameworks */ = {isa = PBXBuildFile; productRef = 5AF4C9A72C2EA7E90021B93F /* SnapSettingsService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5A36E8D12BD1973D00539BC4 /* snap-settings-service */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "snap-settings-service"; path = ..; sourceTree = "<group>"; };
 		5A96A92A2BD191A000DFAC0F /* SnapSettingsServiceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapSettingsServiceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A96A92D2BD191A000DFAC0F /* SnapSettingsServiceDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapSettingsServiceDemoApp.swift; sourceTree = "<group>"; };
 		5A96A92F2BD191A000DFAC0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A96A9422BD1945E00DFAC0F /* SnapSettingsService in Frameworks */,
+				5AF4C9A82C2EA7E90021B93F /* SnapSettingsService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +44,6 @@
 		5A96A9212BD191A000DFAC0F = {
 			isa = PBXGroup;
 			children = (
-				5A36E8D12BD1973D00539BC4 /* snap-settings-service */,
 				5A96A92C2BD191A000DFAC0F /* SnapSettingsServiceDemo */,
 				5A96A92B2BD191A000DFAC0F /* Products */,
 			);
@@ -107,7 +105,7 @@
 			);
 			name = SnapSettingsServiceDemo;
 			packageProductDependencies = (
-				5A96A9412BD1945E00DFAC0F /* SnapSettingsService */,
+				5AF4C9A72C2EA7E90021B93F /* SnapSettingsService */,
 			);
 			productName = SnapSettingsServiceDemo;
 			productReference = 5A96A92A2BD191A000DFAC0F /* SnapSettingsServiceDemo.app */;
@@ -138,7 +136,7 @@
 			);
 			mainGroup = 5A96A9212BD191A000DFAC0F;
 			packageReferences = (
-				5A96A9402BD1945E00DFAC0F /* XCRemoteSwiftPackageReference "snap-settings-service" */,
+				5AF4C9A62C2EA7E90021B93F /* XCRemoteSwiftPackageReference "snap-settings-service" */,
 			);
 			productRefGroup = 5A96A92B2BD191A000DFAC0F /* Products */;
 			projectDirPath = "";
@@ -314,10 +312,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.simonnickel.SnapSettingsServiceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -325,7 +323,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_STRICT_CONCURRENCY = complete;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -353,10 +351,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.simonnickel.SnapSettingsServiceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -364,7 +362,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_STRICT_CONCURRENCY = complete;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -393,20 +391,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5A96A9402BD1945E00DFAC0F /* XCRemoteSwiftPackageReference "snap-settings-service" */ = {
+		5AF4C9A62C2EA7E90021B93F /* XCRemoteSwiftPackageReference "snap-settings-service" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/simonnickel/snap-settings-service";
 			requirement = {
-				branch = main;
+				branch = "main-xc16";
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5A96A9412BD1945E00DFAC0F /* SnapSettingsService */ = {
+		5AF4C9A72C2EA7E90021B93F /* SnapSettingsService */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5A96A9402BD1945E00DFAC0F /* XCRemoteSwiftPackageReference "snap-settings-service" */;
+			package = 5AF4C9A62C2EA7E90021B93F /* XCRemoteSwiftPackageReference "snap-settings-service" */;
 			productName = SnapSettingsService;
 		};
 /* End XCSwiftPackageProductDependency section */
