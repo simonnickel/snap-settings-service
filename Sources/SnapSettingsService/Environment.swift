@@ -14,6 +14,13 @@ private struct SettingsServiceKey: EnvironmentKey {
 		// Not sure if this might be something that is solved in a future version of Swift or SwiftUI.EnvironmentKey.
 		// Static property 'defaultValue' is not concurrency-safe because it is not either conforming to 'Sendable' or isolated to a global actor; this is an error in Swift 6
 		// Main actor-isolated static property 'defaultValue' cannot be used to satisfy nonisolated protocol requirement
+		
+		// Should be replaced with @Entry at some point.
+		//public extension EnvironmentValues {
+		//
+		//	@Entry var serviceSettings: SettingsService = SettingsService(defaults: nil, ubiquitous: nil)
+		//}
+		
 		SettingsService(defaults: nil, ubiquitous: nil)
 	}
 	

@@ -81,20 +81,6 @@ public class SettingsService {
 	}
 	
 	
-	// MARK: Binding
-	
-	public func binding<T>(_ setting: Setting<T>) -> Binding<T> {
-		return Binding(
-			get: {
-				self.get(setting)
-			},
-			set: { newValue in
-				self.set(setting, to: newValue)
-			}
-		)
-	}
-	
-	
 	// MARK: Encoding
 	
 	private static func decodeObject<T: Decodable>(_ data: Data, for key: StorageKey) -> T? {

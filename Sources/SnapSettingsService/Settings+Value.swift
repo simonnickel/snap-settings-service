@@ -11,10 +11,12 @@ import Combine
 
 public extension SettingsService {
 	
+	@MainActor
 	func value<T: SettingsService.SettingDefinition.TypeRequirement>(_ setting: Setting<T>) -> Value<T> {
 		Value(settings: self, setting: setting)
 	}
 	
+	@MainActor
 	@Observable class Value<T: SettingDefinition.TypeRequirement> {
 		
 		private let settings: SettingsService
@@ -41,9 +43,9 @@ public extension SettingsService {
 		}
 		
 		public var binding: Binding<T> {
-			Binding<T> {
+			Binding<T> { @MainActor in
 				self.value
-			} set: { value, transaction in
+			} set: { @MainActor value, transaction in
 				self.set(value)
 			}
 		}

@@ -26,15 +26,12 @@ let package = Package(
             name: "SnapSettingsService",
 			dependencies: [
 				.product(name: "SnapCore", package: "snap-core"),
-			],
-			swiftSettings: [
-				.enableExperimentalFeature("StrictConcurrency")
-			] // TODO: Remove
+			]
 		),
         .testTarget(
             name: "SnapSettingsServiceTests",
             dependencies: ["SnapSettingsService"]
 		),
-    ]
-	// TODO: swiftLanguageVersions: [.version("6")]
+    ],
+	swiftLanguageVersions: [.version("6")]
 )
