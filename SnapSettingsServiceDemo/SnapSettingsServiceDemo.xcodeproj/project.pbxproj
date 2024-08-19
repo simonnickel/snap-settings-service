@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FF20B672C73D11B00660878 /* SnapSettingsService in Frameworks */ = {isa = PBXBuildFile; productRef = 1FF20B662C73D11B00660878 /* SnapSettingsService */; };
 		5A96A92E2BD191A000DFAC0F /* SnapSettingsServiceDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A92D2BD191A000DFAC0F /* SnapSettingsServiceDemoApp.swift */; };
 		5A96A9302BD191A000DFAC0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A92F2BD191A000DFAC0F /* ContentView.swift */; };
 		5A96A9322BD191A200DFAC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A96A9312BD191A200DFAC0F /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		5A96A9452BD194F900DFAC0F /* SettingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9442BD194F900DFAC0F /* SettingsList.swift */; };
 		5A96A94A2BD1953A00DFAC0F /* CustomStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9462BD1953A00DFAC0F /* CustomStore.swift */; };
 		5A96A94B2BD1953A00DFAC0F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96A9472BD1953A00DFAC0F /* Settings.swift */; };
-		5AF4C9A82C2EA7E90021B93F /* SnapSettingsService in Frameworks */ = {isa = PBXBuildFile; productRef = 5AF4C9A72C2EA7E90021B93F /* SnapSettingsService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AF4C9A82C2EA7E90021B93F /* SnapSettingsService in Frameworks */,
+				1FF20B672C73D11B00660878 /* SnapSettingsService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 			);
 			name = SnapSettingsServiceDemo;
 			packageProductDependencies = (
-				5AF4C9A72C2EA7E90021B93F /* SnapSettingsService */,
+				1FF20B662C73D11B00660878 /* SnapSettingsService */,
 			);
 			productName = SnapSettingsServiceDemo;
 			productReference = 5A96A92A2BD191A000DFAC0F /* SnapSettingsServiceDemo.app */;
@@ -136,7 +136,7 @@
 			);
 			mainGroup = 5A96A9212BD191A000DFAC0F;
 			packageReferences = (
-				5AF4C9A62C2EA7E90021B93F /* XCRemoteSwiftPackageReference "snap-settings-service" */,
+				1FF20B652C73D11B00660878 /* XCLocalSwiftPackageReference "../../snap-settings-service" */,
 			);
 			productRefGroup = 5A96A92B2BD191A000DFAC0F /* Products */;
 			projectDirPath = "";
@@ -390,21 +390,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		5AF4C9A62C2EA7E90021B93F /* XCRemoteSwiftPackageReference "snap-settings-service" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/simonnickel/snap-settings-service";
-			requirement = {
-				branch = "main-xc16";
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		1FF20B652C73D11B00660878 /* XCLocalSwiftPackageReference "../../snap-settings-service" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../snap-settings-service";
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5AF4C9A72C2EA7E90021B93F /* SnapSettingsService */ = {
+		1FF20B662C73D11B00660878 /* SnapSettingsService */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5AF4C9A62C2EA7E90021B93F /* XCRemoteSwiftPackageReference "snap-settings-service" */;
 			productName = SnapSettingsService;
 		};
 /* End XCSwiftPackageProductDependency section */
