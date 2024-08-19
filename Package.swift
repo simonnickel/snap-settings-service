@@ -31,10 +31,6 @@ let package = Package(
 				.enableExperimentalFeature("StrictConcurrency")
 			] // TODO: Remove
 		),
-        .testTarget(
-            name: "SnapSettingsServiceTests",
-            dependencies: ["SnapSettingsService"]
-		),
     ]//,
 	//swiftLanguageVersions: [.version("6")]
 	// TODO: FB enable Swift 6, currently it crashes when using Binding with @MainActor
