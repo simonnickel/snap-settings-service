@@ -1,8 +1,6 @@
 //
-//  SettingsService+Environment.swift
-//  SnapSettingsService
-//
-//  Created by Simon Nickel on 09.10.23.
+//  SNAP - https://github.com/simonnickel/snap
+//  Created by Simon Nickel
 //
 
 import SwiftUI
