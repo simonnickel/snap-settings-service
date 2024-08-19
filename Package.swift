@@ -26,12 +26,8 @@ let package = Package(
             name: "SnapSettingsService",
 			dependencies: [
 				.product(name: "SnapCore", package: "snap-core"),
-			],
-			swiftSettings: [
-				.enableExperimentalFeature("StrictConcurrency")
-			] // TODO: Remove
+			]
 		),
-    ]//,
-	//swiftLanguageVersions: [.version("6")]
-	// TODO: FB enable Swift 6, currently it crashes when using Binding with @MainActor
+    ],
+    swiftLanguageModes: [.version("6")]
 )
