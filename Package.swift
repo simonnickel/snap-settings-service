@@ -1,4 +1,4 @@
-// swift-tools-version: 5.10
+// swift-tools-version: 6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,15 +6,15 @@ import PackageDescription
 let package = Package(
     name: "snap-settings-service",
 	platforms: [
-		.iOS(.v17), .macOS(.v14)
+		.iOS(.v18), .macOS(.v15)
 	],
-    products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "SnapSettingsService",
-            targets: ["SnapSettingsService"]
+	products: [
+		// Products define the executables and libraries a package produces, making them visible to other packages.
+		.library(
+			name: "SnapSettingsService",
+			targets: ["SnapSettingsService"]
 		),
-    ],
+	],
 	dependencies: [
 		// Dependencies declare other packages that this package depends on.
 		.package(url: "https://github.com/simonnickel/snap-core.git", branch: "main"),
@@ -26,14 +26,8 @@ let package = Package(
             name: "SnapSettingsService",
 			dependencies: [
 				.product(name: "SnapCore", package: "snap-core"),
-			],
-			swiftSettings: [
-				.enableExperimentalFeature("StrictConcurrency")
 			]
 		),
-        .testTarget(
-            name: "SnapSettingsServiceTests",
-            dependencies: ["SnapSettingsService"]
-		),
-    ]
+    ],
+    swiftLanguageModes: [.version("6")]
 )

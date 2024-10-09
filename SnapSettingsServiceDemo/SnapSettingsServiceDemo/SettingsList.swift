@@ -14,25 +14,15 @@ struct SettingsList: View {
 		List {
 			
 			Section {
-				Toggle(isOn: settings.binding(.settingsLocal), label: {
-					ListRowLabel(subtitle: "settings.binding()", subsubtitle: "update on load")
-				})
-				
 				ToggleWithValue(settingsValue: settings.value(.settingsLocal))
-				
 				ButtonWithValue(settingsValue: settings.value(.settingsLocal))
 			} header: {
 				TitleLabel(title: ".defaults")
 			}
 				
 			Section {
-				Toggle(isOn: settings.binding(.settingsSynced), label: {
-					// TODO macOS: Checkbox does not get enabled on click.
-					ListRowLabel(subtitle: "settings.binding()", subsubtitle: "update on load")
-				})
-				
 				ToggleWithValue(settingsValue: settings.value(.settingsSynced))
-				
+				ButtonWithValue(settingsValue: settings.value(.settingsSynced))
 				LabelWithValue(settingsValue: settings.value(.settingsSynced))
 			} header: {
 				TitleLabel(title: ".ubiquitous")
@@ -41,14 +31,13 @@ struct SettingsList: View {
 			}
 			
 			Section {
-				Toggle(isOn: settings.binding(.settingsCustom), label: {
+				Toggle(isOn: settings.value(.settingsCustom).binding, label: {
 					ListRowLabel(title: ".custom", subtitle: "Example temp storage")
 				})
 				
-				Toggle(isOn: settings.binding(.settingsStoreNotAvailable), label: {
+				Toggle(isOn: settings.value(.settingsStoreNotAvailable).binding, label: {
 					ListRowLabel(title: "Store not available", subtitle: "Logs warning")
 				})
-
 			}
 			
 		}
