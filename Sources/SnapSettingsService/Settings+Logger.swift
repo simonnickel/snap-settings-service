@@ -6,6 +6,7 @@
 import Foundation
 import OSLog
 import SnapCore
+import SnapFoundation
 
 internal extension Logger {
 	
