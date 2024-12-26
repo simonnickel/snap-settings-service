@@ -157,3 +157,4 @@ View().environment(\.serviceSettings, settings)
 // TODO: App Groups? Access in Widget?
 // TODO: Handle iCloud not available. It does store locally and logs a warning, but should do something?
 // TODO: Compare with https://github.com/kylehughes/PersistentKeyValueKit
+// TODO: Comoare with https://github.com/sindresorhus/Defaults
