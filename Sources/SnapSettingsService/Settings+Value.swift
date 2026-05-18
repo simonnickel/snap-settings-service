@@ -14,6 +14,7 @@ public extension SettingsService {
 		Value(settings: self, setting: setting)
 	}
 	
+	/// An observable wrapper for a setting value, keeping itself in sync with ``SettingsService``.
 	@MainActor
 	@Observable class Value<T: SettingDefinition.TypeRequirement> {
 		

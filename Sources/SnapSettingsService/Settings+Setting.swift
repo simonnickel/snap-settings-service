@@ -13,7 +13,7 @@ public extension SettingsService {
 	
 	/// A `SettingDefinition` with a specific type defined as generic. Consists of a key the setting is stored for and a default value in case no setting is defined yet.
 	///
-	/// Has to be @unchecked because: `'Sendable' class 'Setting' cannot inherit from another class other than 'NSObject'`. Needs to inherit from `SettingDefinition` to add static settings in an extension, which is not allowed on generic types. They have to be available on `Setting` though to be able to access them in short form: `settings.value(.mySetting)`.
+	/// Has to be @unchecked because: `'Sendable' class 'Setting' cannot inherit from another class other than 'NSObject'`. Needs to inherit from `SettingDefinition` to add static settings as stored properties in extensions. Static stored properties in extensions are not allowed on generic types. They have to be available on `Setting` though to be able to access them in short form: `settings.value(.mySetting)`.
 	final class Setting<T: SettingDefinition.TypeRequirement>: SettingDefinition, @unchecked Sendable {
 	
 		public let key: StorageKey

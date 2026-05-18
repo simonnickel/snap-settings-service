@@ -7,6 +7,7 @@ import Foundation
 
 public extension SettingsService {
 	
+	/// Determines where a setting is stored and synced.
 	enum Scope: Hashable, Equatable, Sendable {
 		
 		/// For local settings, stored in UserDefaults.
@@ -17,7 +18,7 @@ public extension SettingsService {
 		case ubiquitous
 		
 		/// A custom `Scope` to use with a provided `SettingsStore`.
-		/// Don't forget to add the store in `SettingsService(storesForCustomScope:)`.
+		/// Don't forget to add the store in `SettingsService(storesForCustomScopes:)`.
 		case custom(id: String)
 		
 		public var name: String {

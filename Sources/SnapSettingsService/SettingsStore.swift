@@ -5,6 +5,7 @@
 
 import Foundation
 
+/// A key-value store abstraction used by ``SettingsService`` to persist setting data.
 public protocol SettingsStore {
 	
 	func get(_ key: SettingsService.StorageKey) -> Data?

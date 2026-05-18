@@ -7,6 +7,7 @@ import Foundation
 
 public extension SettingsService {
 	
+	/// Identifies a setting by its string name and the scope it is stored in.
 	struct StorageKey: Hashable, Equatable, Sendable {
 		
 		public typealias NameType = String

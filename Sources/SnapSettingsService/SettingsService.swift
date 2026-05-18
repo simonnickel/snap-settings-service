@@ -40,6 +40,7 @@ public class SettingsService {
 	
 	// MARK: Get
 	
+	/// Returns the current value for the given setting, or the setting's default if no value is stored.
 	public func get<T>(_ setting: Setting<T>) -> T {
 		let data: Data? = getData(setting.key)
 		
@@ -66,6 +67,7 @@ public class SettingsService {
 	
 	// MARK: Set
 	
+	/// Persists the value for the given setting and notifies any active publishers.
 	public func set<T>(_ setting: Setting<T>, to value: T) {
 		guard let store = store(for: setting.key.scope) else {
 			Logger.settings.warning("Could not SET setting for '\(setting.key.name)'. No Store available for '\(setting.key.scope.name)'.")
@@ -135,6 +137,7 @@ public class SettingsService {
 		}
 	}
 	
+	/// Returns a publisher that emits the setting's current value and any subsequent changes.
 	public func publisher<T>(_ setting: Setting<T>) -> AnyPublisher<T, Never> {
 		publisherPing(setting)
 			.map { data in
