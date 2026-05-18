@@ -10,6 +10,8 @@ A single interface to handle different types of settings. It stores a `Codable` 
 
 This package provides the `SettingsService` class, `SettingsStore` protocol and helper to define, save and read settings.
 
+**Requires** iOS 18 / macOS 15. Depends on [`SnapCore`](https://github.com/simonnickel/snap-core).
+
 [![Documentation][documentation badge]][documentation] 
 
 [documentation]: https://swiftpackageindex.com/simonnickel/snap-settings-service/main/documentation/snapsettingsservice
@@ -44,7 +46,7 @@ settings.set(.exampleNumber, to: 2)
 let number = settings.get(.exampleNumber)
 ```
 
-Use the binding, when you need it to update on changes:
+Use the binding, when you need it to update on changes (`value(_:)` is `@MainActor`):
 ```
 struct MyView: View {
 	let observableValue: SettingsService.Value<Int> = settings.value(.exampleNumber)
@@ -75,7 +77,7 @@ Stored locally in `UserDefaults`.
 
 Stored in iCloud using `NSUbiquitousKeyValueStore`. 
 
-If user is not logged in, the value is stored locally and a warning is logged. 
+If iCloud is unavailable, `NSUbiquitousKeyValueStore` stores values locally as a fallback — `SettingsService` is not involved in that fallback. A warning is only logged if no store is registered for the scope at all.
 
 > To use NSUbiquitousKeyValueStore, you must distribute your app through the App Store or Mac App Store, and you must request the com.apple.developer.ubiquity-kvstore-identifier entitlement in your Xcode project.
 [NSUbiquitousKeyValueStore Documentation](https://developer.apple.com/documentation/foundation/nsubiquitouskeyvaluestore#)
@@ -102,8 +104,8 @@ You can create a custom store by implementing `SettingsStore`.
 
 ```
 public protocol SettingsStore {
-	func get<T>(_ key: SettingsService.Setting<T>) -> Data?
-	func set<T>(_ key: SettingsService.Setting<T>, to data: Data?)
+	func get(_ key: SettingsService.StorageKey) -> Data?
+	func set(_ key: SettingsService.StorageKey, to data: Data?)
 }
 ```
 
@@ -120,6 +122,8 @@ let number = settings.get(.exampleNumber)
 ```
 
 ### Observable Value
+
+`value(_:)` is `@MainActor`.
 
 ```
 struct MyView: View {
@@ -139,16 +143,16 @@ The `SettingsService` provides a Combine publisher to receive updated values. If
 
 ## Environment
 
-The `SettingsService` can be used by the provided `EnvironmentKey`.
+The `SettingsService` can be injected via a SwiftUI environment key (`@Entry` on `EnvironmentValues`).
 
-Inject into the `@Environment`: 
-```
-@Environment(\.serviceSettings) private var settings
-```
-
-Access from `@Environment`:
+Inject into the `@Environment`:
 ```
 View().environment(\.serviceSettings, settings)
+```
+
+Read from `@Environment`:
+```
+@Environment(\.serviceSettings) private var settings
 ```
 
 
@@ -157,4 +161,4 @@ View().environment(\.serviceSettings, settings)
 // TODO: App Groups? Access in Widget?
 // TODO: Handle iCloud not available. It does store locally and logs a warning, but should do something?
 // TODO: Compare with https://github.com/kylehughes/PersistentKeyValueKit
-// TODO: Comoare with https://github.com/sindresorhus/Defaults
+// TODO: Compare with https://github.com/sindresorhus/Defaults
