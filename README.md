@@ -10,12 +10,17 @@ A single interface to handle different types of settings. It stores a `Codable` 
 
 This package provides the `SettingsService` class, `SettingsStore` protocol and helper to define, save and read settings.
 
-**Requires** iOS 18 / macOS 15. Depends on [`SnapCore`](https://github.com/simonnickel/snap-core).
-
 [![Documentation][documentation badge]][documentation] 
 
 [documentation]: https://swiftpackageindex.com/simonnickel/snap-settings-service/main/documentation/snapsettingsservice
 [documentation badge]: https://img.shields.io/badge/Documentation-DocC-blue
+
+
+## Requirements
+
+- iOS 18+, macOS 15+
+- Swift 6.3
+- Dependencies: [snap-core](https://github.com/simonnickel/snap-core)
 
 
 ## Setup
@@ -23,14 +28,14 @@ This package provides the `SettingsService` class, `SettingsStore` protocol and 
 To support settings stored in iCloud (`NSUbiquitousKeyValueStore`) you have to add the `iCloud` Capability to the target and enable the `Key-value storage` checkbox.
 
 
-## Demo
+## Demo project
 
 The [demo project](/SnapSettingsServiceDemo) shows an example usage of the SettingsService with settings in different scopes.
 
 <img src="/screenshot.png" height="400">
 
 
-## How to use
+## Usage
 
 Define your settings:
 ```
