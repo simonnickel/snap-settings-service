@@ -75,14 +75,14 @@ SettingsService.init(defaults: UserDefaults? = .standard, ubiquitous: NSUbiquito
 
 Stored locally in `UserDefaults`.
 
-// TODO: How to handle privacy requirements.
+How to handle privacy requirements is open, see [TODO-5](docs/todo/todos.md).
 
 
 ### .ubiquitous
 
 Stored in iCloud using `NSUbiquitousKeyValueStore`. 
 
-If iCloud is unavailable, `NSUbiquitousKeyValueStore` stores values locally as a fallback — `SettingsService` is not involved in that fallback. A warning is only logged if no store is registered for the scope at all.
+If iCloud is unavailable, `NSUbiquitousKeyValueStore` stores values locally as a fallback — `SettingsService` is not involved in that fallback. A warning is only logged if no store is registered for the scope at all. Handling this case is open, see [TODO-2](docs/todo/todos.md).
 
 > To use NSUbiquitousKeyValueStore, you must distribute your app through the App Store or Mac App Store, and you must request the com.apple.developer.ubiquity-kvstore-identifier entitlement in your Xcode project.
 [NSUbiquitousKeyValueStore Documentation](https://developer.apple.com/documentation/foundation/nsubiquitouskeyvaluestore#)
@@ -159,11 +159,3 @@ Read from `@Environment`:
 ```
 @Environment(\.serviceSettings) private var settings
 ```
-
-
-## TODO
-
-// TODO: App Groups? Access in Widget?
-// TODO: Handle iCloud not available. It does store locally and logs a warning, but should do something?
-// TODO: Compare with https://github.com/kylehughes/PersistentKeyValueKit
-// TODO: Compare with https://github.com/sindresorhus/Defaults
