@@ -67,12 +67,20 @@
 			isa = PBXGroup;
 			children = (
 				5A96A92D2BD191A000DFAC0F /* SnapSettingsServiceDemoApp.swift */,
-				5A96A92F2BD191A000DFAC0F /* ContentView.swift */,
+				5A96A9FF2BD191A000DFAC0F /* Views */,
 				5A96A9442BD194F900DFAC0F /* SettingsList.swift */,
 				5A4500912E7449E20054D1E4 /* SettingsService */,
 				5A4500942E7449E60054D1E4 /* Project */,
 			);
 			path = SnapSettingsServiceDemo;
+			sourceTree = "<group>";
+		};
+		5A96A9FF2BD191A000DFAC0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A96A92F2BD191A000DFAC0F /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
